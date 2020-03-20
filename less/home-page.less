@@ -54,7 +54,7 @@
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 
     .walk-text {
       width: 50%;
@@ -83,7 +83,7 @@
           animation-duration: 1s;
           animation-fill-mode: forwards;
         }
-      }
+      }//btn
 
      .walk-img {
       width: 46%;
@@ -103,19 +103,24 @@
      padding: 2%;
      .walk-img{
        width: 100%;
-       margin-left: none;
+       margin-left: 0;
        margin-bottom: 2%;
-       img{
+       .space-walk{
          width: 100%;
          border-radius: 10px;
        }
-     }
+     }//.walk-img
      .walk-text{
        width: 100%;
      }
      .btn{
        width: 100%;
      }
-   }
+   }//media-query
+
   }//walk
+
 }// home
+.space-walk{
+  border-radius: 10px;
+}

@@ -180,6 +180,9 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.space-walk {
+  border-radius: 10px;
+}
 nav {
   display: flex;
   flex-direction: column;
@@ -266,7 +269,7 @@ footer {
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 .home .walk .walk-text {
   width: 50%;
@@ -314,10 +317,10 @@ footer {
   }
   .home .walk .walk-img {
     width: 100%;
-    margin-left: none;
+    margin-left: 0;
     margin-bottom: 2%;
   }
-  .home .walk .walk-img img {
+  .home .walk .walk-img .space-walk {
     width: 100%;
     border-radius: 10px;
   }
@@ -327,4 +330,7 @@ footer {
   .home .walk .btn {
     width: 100%;
   }
+}
+.space-walk {
+  border-radius: 10px;
 }
