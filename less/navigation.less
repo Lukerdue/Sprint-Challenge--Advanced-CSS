@@ -1,1 +1,26 @@
-// Navigation code here
+nav{
+   .desktop-flex(@direction:column);
+    padding: 3%;
+    width: 100%;
+    h1{
+        margin: 3%;
+        font-size: 4rem;
+    }
+    
+    .links{
+        .desktop-flex();
+        width: 50%;
+        a{
+            .link-color();
+            &:hover{
+                color: black;
+            }
+        }//closes a
+    }//closes links
+    @media @phone{
+        .links{
+            width: 100%;
+            justify-content: space-evenly;
+        }
+    }
+}//closes nav
