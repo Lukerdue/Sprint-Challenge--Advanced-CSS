@@ -75,10 +75,13 @@
         font-family: 'Russo One', sans-serif;
         padding: 2% 5%;
         border: 1px solid @btn-bg-color;
+        animation-name: out;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
         &:hover{
-          background-color: white;
-          color: @btn-bg-color;
-          
+          animation-name: in;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
         }
       }
 

@@ -9,3 +9,13 @@
     color: @color;
     font-size: @size;
 }
+// Animation
+
+@keyframes in{
+    0%{background-color: @btn-bg-color; color: white;}
+    100%{background-color: white; color: @btn-bg-color;}
+}
+@keyframes out{
+    0%{background-color: white; color: @btn-bg-color;}
+    100%{background-color: @btn-bg-color; color: white;}
+}
