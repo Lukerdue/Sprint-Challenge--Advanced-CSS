@@ -57,19 +57,31 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn{
+        .link-color(@color:white, @size: 1.75rem);
+        background-color: @btn-bg-color;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Russo One', sans-serif;
+        padding: 2% 5%;
+        border: 1px solid @btn-bg-color;
+        &:hover{
+          background-color: white;
+          color: @btn-bg-color;
+          
+        }
       }
-    }
 
-    .walk-img {
+     .walk-img {
       width: 46%;
       margin-left: 4%;
       
-      img {
+        img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        }
       }
-    }
+   }
   }
 }// home
